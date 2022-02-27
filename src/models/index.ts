@@ -1,13 +1,8 @@
 import mongoose from 'mongoose';
 
 const connectDb = (uri: string) => {
-    return mongoose.connect(uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false
-    })
-}
+  return mongoose.connect(uri);
+};
 
 const models = {};
 
